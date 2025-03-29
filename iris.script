@@ -1,5 +1,9 @@
-     zn "USER"
-     zpm
-     load /home/irisowner/dev
-     exit
-     halt
+    zn "%SYS"
+    // Unexpire passwords and set up passwordless mode to simplify dev use.
+    do ##class(Security.Users).UnExpireUserPasswords("*")
+    zpm "install passwordless"
+
+    zn "USER"
+    ZPM "load /home/irisowner/dev/ -v":1
+    zpm "list"
+    halt
