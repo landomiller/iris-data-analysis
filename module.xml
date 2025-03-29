@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+  <Document name="iris-data-analysis.ZPM">
+    <Module>
+      <Name>iris-data-analysis</Name>
+      <Version>1.0.0</Version>
+      <Packaging>module</Packaging>
+      <CSPApplication CookiePath="/Ai/Agent/" DefaultTimeout="900" DispatchClass="AI.Agent.BS.DemoBS" MatchRoles="%All:%All,:%All" PasswordAuthEnabled="1" Recurse="1" ServeFiles="1" ServeFilesTimeout="3600" UnauthenticatedEnabled="0" Url="/Ai/Agent" UseSessionCookie="2"/>
+      <SourcesRoot>src</SourcesRoot>
+    </Module>
+  </Document>
+</Export>
