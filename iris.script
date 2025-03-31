@@ -2,4 +2,5 @@
      zpm
      load /home/irisowner/dev
      exit
+	 do ##class(AI.Agent.Util.Deployment).Start()
      halt

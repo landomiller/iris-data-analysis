@@ -12,6 +12,8 @@ ClassMethod Start() As %Status
     Set sc("AutheEnabled")=64,sc("MatchRoles")=":%All",sc("NameSpace")=NameSpace,sc("DispatchClass")="AI.Agent.BS.DemoBS"
 	Set tSC=##Class(Security.Applications).Create("/Ai/Agent",.sc)
     zn NameSpace
+	Set tSC =$system.OBJ.CompilePackage("AI.Agent")
+	Set tSC = $ClassMethod("EnsPortal.AutoStartProduction","ApplyID","AI.Agent.Production",0)    
     Return sc
 }
 
